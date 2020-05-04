@@ -5,13 +5,14 @@ dependencies:
   config:
     - field.field.node.movie.body
     - field.field.node.movie.field_director_s_
-    - field.field.node.movie.field_movie_synopsis
     - field.field.node.movie.field_music_by
+    - field.field.node.movie.field_opening_crawl
     - field.field.node.movie.field_poster
     - field.field.node.movie.field_producer_s_
     - field.field.node.movie.field_released
     - field.field.node.movie.field_series
     - field.field.node.movie.field_starring
+    - field.field.node.movie.field_story
     - field.field.node.movie.field_trailer
     - field.field.node.movie.field_writer_s_
     - image.style.thumbnail
@@ -51,16 +52,6 @@ content:
     third_party_settings: {  }
     type: string_textfield
     region: content
-  field_movie_synopsis:
-    weight: 10
-    settings:
-      rows: 9
-      summary_rows: 3
-      placeholder: ''
-      show_summary: false
-    third_party_settings: {  }
-    type: text_textarea_with_summary
-    region: content
   field_music_by:
     weight: 15
     settings:
@@ -68,6 +59,14 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
+    region: content
+  field_opening_crawl:
+    weight: 26
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
     region: content
   field_poster:
     weight: 7
@@ -104,6 +103,16 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
+    region: content
+  field_story:
+    weight: 27
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+    type: text_textarea_with_summary
     region: content
   field_trailer:
     weight: 8

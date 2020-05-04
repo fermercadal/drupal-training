@@ -1,17 +1,16 @@
-uuid: 8820e22c-608d-4d99-88cf-2893cd2fe0a9
+uuid: 51198e26-c156-4ec0-a05c-c364ad13b5f6
 langcode: en
 status: true
 dependencies:
   module:
-    - datetime
     - node
-id: node.field_released
-field_name: field_released
+    - text
+id: node.field_opening_crawl
+field_name: field_opening_crawl
 entity_type: node
-type: datetime
-settings:
-  datetime_type: date
-module: datetime
+type: text_long
+settings: {  }
+module: text
 locked: false
 cardinality: 1
 translatable: true

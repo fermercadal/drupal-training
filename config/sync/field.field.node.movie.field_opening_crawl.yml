@@ -1,0 +1,21 @@
+uuid: a788cebd-239c-421a-865a-c3b32571f8f8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_opening_crawl
+    - node.type.movie
+  module:
+    - text
+id: node.movie.field_opening_crawl
+field_name: field_opening_crawl
+entity_type: node
+bundle: movie
+label: 'Opening crawl'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

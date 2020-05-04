@@ -1,17 +1,17 @@
-uuid: d616cd7e-3a3d-4776-a81e-ab9db437b8e1
+uuid: 894b36d1-c910-40c1-98cd-5ceb7f243bca
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_movie_synopsis
+    - field.storage.node.field_story
     - node.type.movie
   module:
     - text
-id: node.movie.field_movie_synopsis
-field_name: field_movie_synopsis
+id: node.movie.field_story
+field_name: field_story
 entity_type: node
 bundle: movie
-label: 'Movie Synopsis'
+label: Story
 description: ''
 required: false
 translatable: false

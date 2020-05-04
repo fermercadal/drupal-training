@@ -1,12 +1,12 @@
-uuid: 5ec46f64-1de2-4b57-a141-27fdaf6035b8
+uuid: c51d038f-9674-400f-8408-ccb8e661c009
 langcode: en
 status: true
 dependencies:
   module:
     - node
     - text
-id: node.field_movie_synopsis
-field_name: field_movie_synopsis
+id: node.field_story
+field_name: field_story
 entity_type: node
 type: text_with_summary
 settings: {  }
