@@ -1,0 +1,28 @@
+uuid: 89a952d6-0b42-4a66-b347-f09c202fd166
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.planet.body
+    - node.type.planet
+  module:
+    - text
+    - user
+id: node.planet.default
+targetEntityType: node
+bundle: planet
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

@@ -1,0 +1,18 @@
+uuid: 3a366adc-2e3a-40e6-9aa2-4726438dad38
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Movie
+type: movie
+description: 'Use <em>Movie</em> for Star Wars movies, such as <em>Star Wars: Episode IV – A New Hope.</em>'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true
