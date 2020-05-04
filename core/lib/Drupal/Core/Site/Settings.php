@@ -138,6 +138,13 @@ final class Settings {
       $config_directories['sync'] = $settings['config_sync_directory'];
     }
 
+    $settings['trusted_host_patterns'] = [
+      '^'.getenv('LANDO_APP_NAME').'\.lndo\.site$',
+      '^localhost$',
+      '^'.getenv('LANDO_APP_NAME').'\.localtunnel\.me$',
+      '^192\.168\.1\.100$'
+    ];
+
     // Initialize Settings.
     new Settings($settings);
   }
@@ -193,9 +200,3 @@ final class Settings {
 
 }
 
-$settings['trusted_host_patterns'] = [
-  '^'.getenv('LANDO_APP_NAME').'\.lndo\.site$',
-  '^localhost$',
-  '^'.getenv('LANDO_APP_NAME').'\.localtunnel\.me$',
-  '^192\.168\.1\.100$'
-];
