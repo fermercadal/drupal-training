@@ -1,14 +1,14 @@
-uuid: 380b4ca1-5f25-4df7-b57e-f197fc292b54
+uuid: 5ec46f64-1de2-4b57-a141-27fdaf6035b8
 langcode: en
 status: true
 dependencies:
   module:
     - node
     - text
-id: node.field_movie_title
-field_name: field_movie_title
+id: node.field_movie_synopsis
+field_name: field_movie_synopsis
 entity_type: node
-type: text_long
+type: text_with_summary
 settings: {  }
 module: text
 locked: false

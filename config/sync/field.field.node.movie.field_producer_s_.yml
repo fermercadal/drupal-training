@@ -1,0 +1,19 @@
+uuid: d2e1cc1d-90f5-482a-aa96-bc478705bd0b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_producer_s_
+    - node.type.movie
+id: node.movie.field_producer_s_
+field_name: field_producer_s_
+entity_type: node
+bundle: movie
+label: Producer(s)
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

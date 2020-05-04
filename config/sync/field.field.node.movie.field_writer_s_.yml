@@ -1,0 +1,19 @@
+uuid: ab8f9a2f-6166-4842-87d4-ab149c077982
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_writer_s_
+    - node.type.movie
+id: node.movie.field_writer_s_
+field_name: field_writer_s_
+entity_type: node
+bundle: movie
+label: Writer(s)
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

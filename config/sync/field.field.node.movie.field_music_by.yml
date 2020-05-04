@@ -1,0 +1,19 @@
+uuid: e22f1e44-d975-4799-841a-eb4800571da0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_music_by
+    - node.type.movie
+id: node.movie.field_music_by
+field_name: field_music_by
+entity_type: node
+bundle: movie
+label: 'Music by'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

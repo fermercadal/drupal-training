@@ -4,9 +4,22 @@ status: true
 dependencies:
   config:
     - field.field.node.movie.body
-    - field.field.node.movie.field_movie_title
+    - field.field.node.movie.field_director_s_
+    - field.field.node.movie.field_movie_synopsis
+    - field.field.node.movie.field_music_by
+    - field.field.node.movie.field_poster
+    - field.field.node.movie.field_producer_s_
+    - field.field.node.movie.field_released
+    - field.field.node.movie.field_series
+    - field.field.node.movie.field_starring
+    - field.field.node.movie.field_trailer
+    - field.field.node.movie.field_writer_s_
     - node.type.movie
   module:
+    - datetime
+    - image
+    - link
+    - options
     - text
     - user
 id: node.movie.default
@@ -21,12 +34,89 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
-  field_movie_title:
+  field_director_s_:
+    weight: 103
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_movie_synopsis:
     weight: 102
     label: above
     settings: {  }
     third_party_settings: {  }
     type: text_default
+    region: content
+  field_music_by:
+    weight: 107
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_poster:
+    weight: 110
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_producer_s_:
+    weight: 104
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_released:
+    weight: 108
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_series:
+    weight: 109
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_starring:
+    weight: 106
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_trailer:
+    weight: 111
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_writer_s_:
+    weight: 105
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
     region: content
   links:
     weight: 100

@@ -1,0 +1,21 @@
+uuid: 9c126acf-9f4b-44e2-9205-d57d9ee80310
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_series
+    - node.type.movie
+  module:
+    - options
+id: node.movie.field_series
+field_name: field_series
+entity_type: node
+bundle: movie
+label: Series
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

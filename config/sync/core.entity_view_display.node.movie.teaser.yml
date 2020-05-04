@@ -5,7 +5,16 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.movie.body
-    - field.field.node.movie.field_movie_title
+    - field.field.node.movie.field_director_s_
+    - field.field.node.movie.field_movie_synopsis
+    - field.field.node.movie.field_music_by
+    - field.field.node.movie.field_poster
+    - field.field.node.movie.field_producer_s_
+    - field.field.node.movie.field_released
+    - field.field.node.movie.field_series
+    - field.field.node.movie.field_starring
+    - field.field.node.movie.field_trailer
+    - field.field.node.movie.field_writer_s_
     - node.type.movie
   module:
     - text
@@ -29,4 +38,13 @@ content:
     third_party_settings: {  }
     region: content
 hidden:
-  field_movie_title: true
+  field_director_s_: true
+  field_movie_synopsis: true
+  field_music_by: true
+  field_poster: true
+  field_producer_s_: true
+  field_released: true
+  field_series: true
+  field_starring: true
+  field_trailer: true
+  field_writer_s_: true

@@ -1,21 +1,19 @@
-uuid: d8dbe909-e9c3-4519-90e9-09f41d93319b
+uuid: c30589ac-cf36-4276-a913-bddf6e19027c
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_movie_title
+    - field.storage.node.field_starring
     - node.type.movie
-  module:
-    - text
-id: node.movie.field_movie_title
-field_name: field_movie_title
+id: node.movie.field_starring
+field_name: field_starring
 entity_type: node
 bundle: movie
-label: 'Movie title'
+label: Starring
 description: ''
 required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
 settings: {  }
-field_type: text_long
+field_type: string

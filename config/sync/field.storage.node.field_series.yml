@@ -1,0 +1,33 @@
+uuid: 16dcdd16-3d75-401f-9868-6441724c21b3
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_series
+field_name: field_series
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: original
+      label: 'Original trilogy'
+    -
+      value: prequel
+      label: 'Prequel trilogy'
+    -
+      value: sequel
+      label: 'Sequel trilogy'
+    -
+      value: anthology
+      label: 'Anthology series'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
