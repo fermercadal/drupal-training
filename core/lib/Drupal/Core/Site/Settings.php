@@ -145,6 +145,8 @@ final class Settings {
       '^192\.168\.1\.100$'
     ];
 
+    $settings['config_sync_directory'] = $app_root . '/config/sync';
+    
     // Initialize Settings.
     new Settings($settings);
   }
