@@ -1,0 +1,19 @@
+uuid: 4c0f2d0e-33a6-44cd-b276-7faba2ff9c1b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_primary_terrain
+    - node.type.planet
+id: node.planet.field_primary_terrain
+field_name: field_primary_terrain
+entity_type: node
+bundle: planet
+label: 'Primary terrain'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

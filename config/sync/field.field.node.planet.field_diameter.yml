@@ -1,0 +1,19 @@
+uuid: 128cde94-e666-49f9-93bb-7cb0072c1a63
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_diameter
+    - node.type.planet
+id: node.planet.field_diameter
+field_name: field_diameter
+entity_type: node
+bundle: planet
+label: Diameter
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

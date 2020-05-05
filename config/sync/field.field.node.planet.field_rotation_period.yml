@@ -1,0 +1,19 @@
+uuid: eba38847-f109-4b89-823c-43993788e2aa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_rotation_period
+    - node.type.planet
+id: node.planet.field_rotation_period
+field_name: field_rotation_period
+entity_type: node
+bundle: planet
+label: 'Rotation period'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

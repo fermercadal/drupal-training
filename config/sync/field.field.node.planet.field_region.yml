@@ -1,0 +1,19 @@
+uuid: ceaa4354-5a1f-4f78-ab5e-822d8532ab5e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_region
+    - node.type.planet
+id: node.planet.field_region
+field_name: field_region
+entity_type: node
+bundle: planet
+label: Region
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

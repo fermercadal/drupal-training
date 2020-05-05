@@ -5,6 +5,13 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.planet.body
+    - field.field.node.planet.field_diameter
+    - field.field.node.planet.field_landscape
+    - field.field.node.planet.field_planet_class
+    - field.field.node.planet.field_planet_description
+    - field.field.node.planet.field_primary_terrain
+    - field.field.node.planet.field_region
+    - field.field.node.planet.field_rotation_period
     - node.type.planet
   module:
     - text
@@ -27,4 +34,11 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
-hidden: {  }
+hidden:
+  field_diameter: true
+  field_landscape: true
+  field_planet_class: true
+  field_planet_description: true
+  field_primary_terrain: true
+  field_region: true
+  field_rotation_period: true

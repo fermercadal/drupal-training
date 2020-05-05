@@ -4,8 +4,17 @@ status: true
 dependencies:
   config:
     - field.field.node.planet.body
+    - field.field.node.planet.field_diameter
+    - field.field.node.planet.field_landscape
+    - field.field.node.planet.field_planet_class
+    - field.field.node.planet.field_planet_description
+    - field.field.node.planet.field_primary_terrain
+    - field.field.node.planet.field_region
+    - field.field.node.planet.field_rotation_period
+    - image.style.thumbnail
     - node.type.planet
   module:
+    - image
     - path
     - text
 id: node.planet.default
@@ -29,6 +38,64 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_diameter:
+    weight: 126
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_landscape:
+    weight: 128
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_planet_class:
+    weight: 125
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_planet_description:
+    weight: 122
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+    type: text_textarea_with_summary
+    region: content
+  field_primary_terrain:
+    weight: 127
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_region:
+    weight: 123
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_rotation_period:
+    weight: 124
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
   path:
     type: path
     weight: 30

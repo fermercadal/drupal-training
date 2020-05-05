@@ -1,0 +1,21 @@
+uuid: ef398f68-9a8f-40a6-b7a7-f3a37e2a4ff2
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_planet_class
+field_name: field_planet_class
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

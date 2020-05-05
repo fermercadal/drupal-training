@@ -1,0 +1,19 @@
+uuid: 40735a04-6b02-4ce4-97be-55634776af05
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_planet_class
+    - node.type.planet
+id: node.planet.field_planet_class
+field_name: field_planet_class
+entity_type: node
+bundle: planet
+label: 'Planet class'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
