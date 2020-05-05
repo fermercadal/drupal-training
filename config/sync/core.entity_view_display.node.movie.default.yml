@@ -12,7 +12,6 @@ dependencies:
     - field.field.node.movie.field_released
     - field.field.node.movie.field_series
     - field.field.node.movie.field_starring
-    - field.field.node.movie.field_story
     - field.field.node.movie.field_trailer
     - field.field.node.movie.field_writer_s_
     - node.type.movie
@@ -98,13 +97,6 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     type: string
-    region: content
-  field_story:
-    weight: 113
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: text_default
     region: content
   field_trailer:
     weight: 111

@@ -13,7 +13,6 @@ dependencies:
     - field.field.node.movie.field_released
     - field.field.node.movie.field_series
     - field.field.node.movie.field_starring
-    - field.field.node.movie.field_story
     - field.field.node.movie.field_trailer
     - field.field.node.movie.field_writer_s_
     - node.type.movie
@@ -47,6 +46,5 @@ hidden:
   field_released: true
   field_series: true
   field_starring: true
-  field_story: true
   field_trailer: true
   field_writer_s_: true
