@@ -1,0 +1,21 @@
+uuid: 551268c7-ccb0-46e8-ade1-f7c1dae9cd25
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_side
+    - node.type.character
+  module:
+    - text
+id: node.character.field_side
+field_name: field_side
+entity_type: node
+bundle: character
+label: Side
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

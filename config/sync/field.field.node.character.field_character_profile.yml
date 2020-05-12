@@ -1,0 +1,38 @@
+uuid: bbf30f0d-f8c7-4202-97a5-6e7beabe8424
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_character_profile
+    - node.type.character
+  module:
+    - image
+id: node.character.field_character_profile
+field_name: field_character_profile
+entity_type: node
+bundle: character
+label: 'Character profile'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image
