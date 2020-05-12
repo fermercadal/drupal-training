@@ -200,6 +200,7 @@ display:
       row:
         type: 'entity:node'
         options:
+          relationship: none
           view_mode: teaser
       sorts:
         sticky:
@@ -232,12 +233,16 @@ display:
           entity_type: node
           entity_field: created
       style:
-        type: default
+        type: grid
         options:
-          grouping: {  }
-          row_class: ''
-          default_row_class: true
           uses_fields: false
+          columns: 3
+          automatic_width: true
+          alignment: horizontal
+          col_class_default: true
+          col_class_custom: ''
+          row_class_default: true
+          row_class_custom: ''
       title: ''
       header: {  }
       footer: {  }

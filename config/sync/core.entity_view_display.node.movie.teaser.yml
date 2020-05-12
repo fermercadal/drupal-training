@@ -17,6 +17,7 @@ dependencies:
     - field.field.node.movie.field_writer_s_
     - node.type.movie
   module:
+    - image
     - text
     - user
 id: node.movie.teaser
@@ -27,21 +28,29 @@ content:
   body:
     label: hidden
     type: text_summary_or_trimmed
-    weight: 101
+    weight: 2
     settings:
       trim_length: 600
     third_party_settings: {  }
     region: content
+  field_poster:
+    type: image
+    weight: 0
+    region: content
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
   links:
-    weight: 100
+    weight: 1
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
 hidden:
   field_director_s_: true
   field_music_by: true
   field_opening_crawl: true
-  field_poster: true
   field_producer_s_: true
   field_released: true
   field_series: true
