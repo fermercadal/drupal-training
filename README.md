@@ -10,7 +10,7 @@ Drupal 8 training website built on Lando.
 ## Installation
 
 ```bash
-composer install
+composer composer install
 ```
 
 ## Usage
