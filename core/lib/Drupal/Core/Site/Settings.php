@@ -125,8 +125,21 @@ final class Settings {
       require $app_root . '/' . $site_path . '/settings.php';
     }
 
-    // Initialize Database.
-    Database::setMultipleConnectionInfo($databases);
+    // Initialize databases.
+    foreach ($databases as $key => $targets) {
+      foreach ($targets as $target => $info) {
+        Database::addConnectionInfo($key, $target, $info);
+        // If the database driver is provided by a module, then its code may
+        // need to be instantiated prior to when the module's root namespace
+        // is added to the autoloader, because that happens during service
+        // container initialization but the container definition is likely in
+        // the database. Therefore, allow the connection info to specify an
+        // autoload directory for the driver.
+        if (isset($info['autoload'])) {
+          $class_loader->addPsr4($info['namespace'] . '\\', $info['autoload']);
+        }
+      }
+    }
 
     // For BC ensure the $config_directories global is set both in the global
     // and settings.
@@ -138,15 +151,6 @@ final class Settings {
       $config_directories['sync'] = $settings['config_sync_directory'];
     }
 
-    $settings['trusted_host_patterns'] = [
-      '^'.getenv('LANDO_APP_NAME').'\.lndo\.site$',
-      '^localhost$',
-      '^'.getenv('LANDO_APP_NAME').'\.localtunnel\.me$',
-      '^192\.168\.1\.100$'
-    ];
-
-    $settings['config_sync_directory'] = $app_root . '/config/sync';
-    
     // Initialize Settings.
     new Settings($settings);
   }
@@ -201,4 +205,3 @@ final class Settings {
   }
 
 }
-
